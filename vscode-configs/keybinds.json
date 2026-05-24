@@ -1,0 +1,38 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "alt+r", // test solution
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "CPA --test ${fileBasename}\n"
+    }
+  },
+  {
+    "key": "alt+d", // test solution with show dbg(...) 
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "CPA --test -d ${fileBasename}\n"
+    }
+  },
+  {
+    "key": "alt+f", // fetch testcase
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "CPA --parse solve.cpp\n"
+    }
+  },
+    {
+        "key": "alt+c", // run file
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "cprun \"${fileBasename}\" -d\n"
+        }
+    },
+    {
+        "key": "alt+e", // run file without compile(c, c++)
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "cprun \"${fileBasename}\" --cp -r\n"
+        }
+    }
+]
