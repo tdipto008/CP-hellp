@@ -1,1 +1,139 @@
+{
+  //----------<template>-----------------------------------------
+  "dd": {
+    "prefix": "dd",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "#ifdef LOCAL",
+      "#include \"debug.h\"",
+      "#else",
+      "#define dbg(...)",
+      "#endif",
+      "",
+      "#define endl \"\\n\"",
+      "#define ll int64_t",
+      "",
+      "void solve () {",
+      "   ${0}",
+      "}",
+      "",
+      "int32_t main () {",
+      "    cin.tie(0)->sync_with_stdio(0);",
+      "    int TT; cin >> TT;",
+      "    while (TT--) {solve();}",
+      "}"
+    ],
+    "description": "dd"
+  },
+  "testcase = false": {
+    "prefix": "dd0",
+    "body": [
+      "#include <bits/stdc++.h>",
+      "using namespace std;",
+      "",
+      "#ifdef LOCAL",
+      "#include \"debug.h\"",
+      "#else",
+      "#define dbg(...)",
+      "#endif",
+      "",
+      "#define endl \"\\n\"",
+      "#define ll int64_t",
+      "",
+      "void solve () {",
+      "   ${0}",
+      "}",
+      "",
+      "int32_t main () {",
+      "   cin.tie(0)->sync_with_stdio(0);",
+      "   solve();",
+      "}"
+    ],
+    "description": "testcase = false"
+  },
+//---------------------<sesh>--------------------------------------
+//--------<take input>-----------------------------------------
+  "vi": {
+    "prefix": "vi",
+    "body": [
+      "vector<int> v(n);"
+    ],
+    "description": "vector<int> v(n)"
+  },
+  "vl": {
+    "prefix": "vl",
+    "body": [
+      "vector<int64_t>;"
+    ],
+    "description": "vector<int64_t>"
+  },
 
+  "input vector of int": {
+    "prefix": "ina",
+    "body": [
+		  "for(auto& x: ${1:n}) cin >> x;",
+	  ],
+	  "description": "input vector of int"
+},
+//------------------<sesh>--------------------------------------
+//----------<all>-----------------------------------------------
+  "all(x)": {
+	  "prefix": "all",
+	  "body": [
+		  "begin(${1:v}), end(${1:v})"
+	  ],
+	  "description": "all(v)"
+  },
+
+  "rall(x)": {
+	  "prefix": "rall",
+	  "body": [
+		  "rbegin(${1:a}), rend(${1:a})"
+	  ],
+	  "description": "rall(x)"
+  },
+
+  //print yesno;
+  "yes/no": {
+	  "prefix": "yon",
+	  "body": [
+	  	"cout << (${1:condition} ? \"YES\" : \"NO\") << endl;"
+	  ],
+	  "description": "YES / NO"
+  },
+  //-------------<sesh>-------------------------------------------
+  //-------------<SEGMENT TREE>---------------------------------------
+  "Segmentree": {
+    "prefix": "segT",
+    "body": [
+      "",
+      "template<class T> struct SegmentTree {",
+      "  const T ID{};",
+      "  T cmb(T a, T b) { return a + b; }",
+      "  int N = 1; vector<T> seg;",
+      "  SegmentTree(int _N) {",
+      "    while (N < _N) N *= 2;",
+      "    seg.assign(2*N, ID);",
+      "  }",
+      "  void pull(int p) { seg[p] = cmb(seg[2*p],seg[2*p+1]); }",
+      "  void update(int p, T val) { // set val at position p",
+      "    seg[p += N] = val;",
+      "    for (p /= 2; p > 0; p /= 2) pull(p);",
+      "  }",
+      "  T query(int l, int r) { // zero-indexed, inclusive",
+      "    T lf = ID, rf = ID;",
+      "    for (l += N, r += N + 1; l < r; l /= 2, r /= 2) {",
+      "      if (l & 1) lf = cmb(lf, seg[l++]);",
+      "      if (r & 1) rf = cmb(seg[--r], rf);",
+      "    }",
+      "    return cmb(lf, rf);",
+      "  }",
+      "};"
+    ],
+    "description": "Segmentree"
+  }
+  //----------<sesh>-----------------------------------------
+
+}
