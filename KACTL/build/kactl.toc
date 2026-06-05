@@ -1,0 +1,69 @@
+\contentsline {chapter}{\numberline {1}Contest}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Mathematics}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Trigonometry}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Geometry}{2}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Triangles}{2}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Derivatives/Integrals}{2}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Sums/Series}{3}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Progressions}{3}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Finite Sums}{3}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Taylor Series}{3}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Probability theory}{3}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Data Structures}{3}{chapter.3}%
+\contentsline {section}{\numberline {3.1}STL}{3}{section.3.1}%
+\contentsline {section}{\numberline {3.2}1D Range Queries}{3}{section.3.2}%
+\contentsline {section}{\numberline {3.3}2D Range Queries}{4}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Number Theory}{4}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Modular Arithmetic}{4}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Primality}{5}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Primes}{5}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Divisors}{5}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Euclidean Algorithm}{6}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Bézout's identity}{6}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Pythagorean Triples}{7}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Lifting the Exponent}{7}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Combinatorial}{7}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Permutations}{7}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Cycles}{7}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Burnside's lemma}{7}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Partitions and subsets}{7}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Partition function}{7}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Lucas' Theorem}{7}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}General purpose numbers}{7}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Bernoulli numbers}{7}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Stirling numbers of the first kind}{7}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Eulerian numbers}{7}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Stirling numbers of the second kind}{7}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Bell numbers}{7}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Labeled unrooted trees}{7}{subsection.5.3.6}%
+\contentsline {subsection}{\numberline {5.3.7}Catalan numbers}{7}{subsection.5.3.7}%
+\contentsline {section}{\numberline {5.4}Young Tableaux}{8}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Other}{8}{section.5.5}%
+\contentsline {chapter}{\numberline {6}Numerical}{8}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Matrix}{8}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Polynomials}{9}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Misc}{10}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Graphs}{11}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Basics}{11}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Trees}{12}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}SqrtDecompton}{13}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}DFS Algorithms}{13}{section.7.3}%
+\contentsline {section}{\numberline {7.4}DSU}{14}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Flows}{14}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Matching}{15}{section.7.6}%
+\contentsline {chapter}{\numberline {8}Geometry}{16}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Primitives}{16}{section.8.1}%
+\contentsline {chapter}{\numberline {9}Strings}{17}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Light}{17}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Heavy}{18}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Various}{19}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Searching}{19}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Dynamic programming}{19}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Debugging tricks}{20}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Optimization tricks}{20}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Bit hacks}{20}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}STL Utilities}{20}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}Pragmas}{20}{subsection.10.4.3}%
+\contentsline {section}{\numberline {10.5}Other languages}{21}{section.10.5}%
+\contentsline {section}{\numberline {10.6}Miscellaneous}{21}{section.10.6}%
+\contentsfinish 
