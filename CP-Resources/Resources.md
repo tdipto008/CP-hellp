@@ -8,6 +8,9 @@
 * [HackerRank](https://www.hackerrank.com/)
 * [HackerEarth](https://www.hackerearth.com/)
 * [SPOJ](https://www.spoj.com/)
+* [TOPH](https://toph.co/)
+* [LEETCODE](https://leetcode.com/)
+
 ---
 
 # Analysis
@@ -15,7 +18,10 @@
 * [cp-trainer](https://cp-trainer.com/)
 * [TLE-eliminators](https://www.tle-eliminators.com/cp-sheet/)
 * [Boro-Vai-Koiche](https://boro-vai-koise.netlify.app/)
+* [ThemeCP](https://themecp.vercel.app/)
 
+# List of useful Equations
+* [youkn0wwho blog](https://blog.shahjalalshohag.com/equation-list/)
 
 # Let's print 'Hello World'
 
