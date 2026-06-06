@@ -10,8 +10,11 @@
 * [SPOJ](https://www.spoj.com/)
 ---
 
-# Problem list
+# Analysis
 * [youkn0wwho Topic list](https://youkn0wwho.academy/topic-list/)
+* [cp-trainer](https://cp-trainer.com/)
+* [TLE-eliminators](https://www.tle-eliminators.com/cp-sheet/)
+* [Boro-Vai-Koiche](https://boro-vai-koise.netlify.app/)
 
 
 # Let's print 'Hello World'
