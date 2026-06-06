@@ -2,7 +2,7 @@
 using namespace std;
 
 #ifdef LOCAL
-#include "debug.h"s
+#include "debug.h"
 #else
 #define dbg(...)
 #endif
