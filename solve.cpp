@@ -10,12 +10,12 @@ using namespace std;
 #define endl "\n"
 #define ll int64_t
 
-vector<vector<int>> node;
+vector<vector<int>> adj;
 vector<bool> visited;
+
 void dfs (int u) {
 	visited[u] = true;
-
-	for (auto& v: node[u]) {
+	for (auto v : adj[u]) {
 		if (visited[v]) continue;
 		dfs(v);
 	}
@@ -23,15 +23,15 @@ void dfs (int u) {
 
 void solve () {
 	int n, m; cin >> n >> m;
-	node.resize(n);
+	adj.resize(n);
 	visited.resize(n, false);
 
 	for (int i = 0; i < m; i++) {
-		int u, v;
-		cin >> u >> v; u--, v--;
-		node[u].push_back(v);
-		node[v].push_back(u);
+		int a, b; cin >> a >> b; a--, b--;
+		adj[a].push_back(b);
+		adj[b].push_back(a);
 	}
+
 	vector<int> vis;
 	for (int i = 0; i < n; i++) {
 		if (!visited[i]) {
@@ -39,6 +39,7 @@ void solve () {
 			dfs(i);
 		}
 	}
+
 	cout << vis.size()-1 << endl;
 	for (int i = 1; i < vis.size(); i++) {
 		cout << vis[i-1] << " " << vis[i] << endl;
@@ -46,6 +47,6 @@ void solve () {
 }
 
 int32_t main () {
-	cin.tie(0)->sync_with_stdio(0);
-	solve();
+   cin.tie(0)->sync_with_stdio(0);
+   solve();
 }
