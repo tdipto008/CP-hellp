@@ -1,9 +1,9 @@
 {
-	"editor.fontFamily": "JetBrainsMono Nerd Font",
+	// "editor.fontFamily": "JetBrainsMono Thin",
+	"editor.fontFamily": "JetBrains Mono",
 	"editor.fontSize": 15,
 	"editor.fontLigatures": true,
 	"window.titleBarStyle": "native",
-	"window.menuBarVisibility": "toggle",
 	"workbench.iconTheme": "material-icon-theme",
 	// "workbench.editor.showTabs": "none",
 	"workbench.panel.showLabels": false,
@@ -12,7 +12,7 @@
 	"files.autoSave": "afterDelay",
 	"terminal.integrated.enableMultiLinePasteWarning": "never",
 	"C_Cpp.default.cppStandard": "gnu++23",
-	"editor.tabSize": 4,
+	"editor.tabSize": 2,
 	"editor.renderWhitespace": "boundary",
 	"makefile.configureOnOpen": true,
 	"terminal.integrated.stickyScroll.enabled": false,
@@ -21,6 +21,11 @@
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
 	"terminal.integrated.tabs.location": "left",
-	"terminal.integrated.tabs.enabled": false,
-	"chat.disableAIFeatures": true
+	"chat.disableAIFeatures": true,
+	"git.enableSmartCommit": true,
+	"git.confirmSync": false,
+	"workbench.startupEditor": "none",
+	"workbench.statusBar.visible": false,
+	"window.menuBarVisibility": "toggle",
+	"explorer.confirmDelete": false
 }
