@@ -5,7 +5,7 @@
 	"window.titleBarStyle": "native",
 	"window.menuBarVisibility": "toggle",
 	"workbench.iconTheme": "material-icon-theme",
-	"workbench.editor.showTabs": "none",
+	// "workbench.editor.showTabs": "none",
 	"workbench.panel.showLabels": false,
 	"editor.minimap.enabled": false,
 	"workbench.colorTheme": "Visual Studio 2017 Dark - C++",
