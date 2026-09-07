@@ -9,50 +9,61 @@ using namespace std;
 
 #define endl "\n"
 
+
 struct DSU {
-	vector<int> e;
-	int comp;
-	DSU(int N) {comp = N; e = vector<int>(N, -1); }
+	// int sz, comp;
+	vector<vector<int>> sets;
+	vector<int> e, lazy, sum;
+	DSU(int N) : lazy(N), sum(N) {
+		e = vector<int>(N, -1);
+		sets.resize(N);
+		for (int i = 0; i < N; i++) {
+			sets[i].push_back(i);
+		}
+	}
+	
 	int get(int u) { return e[u] < 0 ? u : e[u] = get(e[u]); }
+	
 	bool sameSet(int u, int v) { return get(u) == get(v); }
+	
 	int size(int u) { return -e[get(u)]; }
+	
 	bool unite(int u, int v) { // union by size
 		u = get(u), v = get(v); if (u == v) return false;
 		if (e[u] > e[v]) swap(u, v);
+		for (auto& x: sets[v]) {
+			sets[u].push_back(x);
+			sum[x] += lazy[v] - lazy[u];
+		}
+		sets[v].clear();
 		e[u] += e[v]; e[v] = u; 
-		comp--;
+		// sz = max(sz, -e[u]); comp--;
 		return true;
+	}
+	int query (int u) {
+		return sum[u]+lazy[get(u)];
 	}
 };
 
 void solve (int TT) {
-	int n, m; cin >> n >> m;
+	int n, q; cin >> n >> q;
 	DSU D(n);
-	vector<pair<int, int>> edge(m);
-	for (int i = 0; i < m; i++) {
-		int u, v; cin >> u >> v; u--, v--;
-		edge[i] = {u, v};
-	}
-	int q; cin >> q;
-	vector<int> qu(q);
-	vector<bool> rem(m, false);
-	for (auto& x: qu) {
-		cin >> x; x--;
-		rem[x] = true;
-	}
-	for (int i = 0; i < m; i++) {
-		if (!rem[i]) {
-			D.unite(edge[i].first, edge[i].second);
+	vector<int> points(n, 0);
+	while (q--) {
+		string op; cin >> op;
+		if (op == "join") {
+			int u, v; cin >> u >> v; u--, v--;
+			D.unite(u, v);
+		} else if (op == "add") {
+			int u, v; cin >> u >> v; u--, v;
+			int p = D.get(u);
+			for (int i = 0; i < n; i++) {
+				if (D.get(i) == p) points[i] += v;
+			}
+		} else {
+			int u; cin >> u; u--;
+			cout << points[u] << endl;
 		}
-	}
-	vector<int> ans(q);
-	for (int i = q-1; i >= 0; i++) {
-		ans[i] = D.comp;
-		D.unite(edge[qu[i]].first, edge[qu[i]].second);
-	}
-	for (int i = 0; i < q; i++) {
-		cout << ans[i];
-		cout << (i == (q-1) ? "\n" : " ");
 	}
 
 }

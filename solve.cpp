@@ -11,7 +11,7 @@ using namespace std;
 #define ll int64_t
 
 void solve () {
-	int n
+	int n;
 }
 
 int32_t main () {

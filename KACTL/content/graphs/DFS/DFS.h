@@ -6,20 +6,20 @@
 
 struct DFS {
 	int N;
-	vector<bool> vis;
 	vector<vector<int>> adj;
+	vector<bool> visited;
 	DFS(int _N) {
 		N = _N;
-		adj.resize(N); vis.resize(N);
+		adj.resize(N); visited.resize(N);
 	}
-	void ae(int u, int v) {
+	void inp(int u, int v) {
 		adj[u].push_back(v);
 		adj[v].push_back(u);
 	}
 	void dfs(int u) {
-		vis[u] = true;
+		visited[u] = true;
 		for (auto& v: adj[u]) {
-			if (!vis[v]) dfs(v);
+			if (!visited[v]) dfs(v);
 		}
 	}
 };
