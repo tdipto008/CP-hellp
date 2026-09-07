@@ -1,17 +1,17 @@
 // Place your key bindings in this file to override the defaults
 [
-  {
-    "key": "alt+d", // compile
-    "command": "workbench.action.terminal.sendSequence",
-    "args": {
-      "text": "g++ solve.cpp -std=c++20 -DLOCAL -O2 -DFELIX -o run\u000D"
-    }
-  },
-  {
-    "key": "alt+r", // run
-    "command": "workbench.action.terminal.sendSequence",
-    "args": {
-      "text": "./run\u000D"
-    }
-  }
+	{
+		"key": "alt+d", // compile
+		"command": "workbench.action.terminal.sendSequence",
+		"args": {
+			"text": "g++ solve.cpp -std=c++20 -DLOCAL -O2 -DFELIX -o .info\\run.exe\u000D"
+		}
+	},
+	{
+		"key": "alt+r", // run
+		"command": "workbench.action.terminal.sendSequence",
+		"args": {
+			"text": ".\\.info\\run.exe\u000D"
+		}
+	}
 ]

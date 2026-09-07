@@ -9,52 +9,8 @@ using namespace std;
 
 #define endl "\n"
 
-struct DSU {
-	vector<int> e;
-	int comp;
-	DSU(int N) {comp = N; e = vector<int>(N, -1); }
-	int get(int u) { return e[u] < 0 ? u : e[u] = get(e[u]); }
-	bool sameSet(int u, int v) { return get(u) == get(v); }
-	int size(int u) { return -e[get(u)]; }
-	bool unite(int u, int v) { // union by size
-		u = get(u), v = get(v); if (u == v) return false;
-		if (e[u] > e[v]) swap(u, v);
-		e[u] += e[v]; e[v] = u; 
-		comp--;
-		return true;
-	}
-};
-
 void solve (int TT) {
-	int n, m; cin >> n >> m;
-	DSU D(n);
-	vector<pair<int, int>> edge(m);
-	for (int i = 0; i < m; i++) {
-		int u, v; cin >> u >> v; u--, v--;
-		edge[i] = {u, v};
-	}
-	int q; cin >> q;
-	vector<int> qu(q);
-	vector<bool> rem(m, false);
-	for (auto& x: qu) {
-		cin >> x; x--;
-		rem[x] = true;
-	}
-	for (int i = 0; i < m; i++) {
-		if (!rem[i]) {
-			D.unite(edge[i].first, edge[i].second);
-		}
-	}
-	vector<int> ans(q);
-	for (int i = q-1; i >= 0; i++) {
-		ans[i] = D.comp;
-		D.unite(edge[qu[i]].first, edge[qu[i]].second);
-	}
-	for (int i = 0; i < q; i++) {
-		cout << ans[i];
-		cout << (i == (q-1) ? "\n" : " ");
-	}
-
+	
 }
 
 int32_t main () {
