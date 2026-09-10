@@ -9,31 +9,8 @@ using namespace std;
 
 #define endl "\n"
 
-bool BinS (vector<int>& v, int sz, int p) {
-	int l = 0, r = sz-1;
-	while (l <= r) {
-		int mid = (l+r)/2;
-		if (v[mid] == p) {
-			return true;
-		}
-		if (v[mid] > p) r = mid-1;
-		else l = mid+1;
-	}
-	return false;
-}
-
 void solve (int TT) {
-	int n, q; cin >> n >> q;
-	vector<int> v(n);
-	for (auto& x: v) cin >> x;
-	while (q--) {
-		int p; cin >> p;
-		if (BinS(v, v.size(), p)) {
-			cout << "YES" << endl;
-		} else {
-			cout << "NO" << endl;
-		}
-	}
+	
 }
 
 int32_t main () {

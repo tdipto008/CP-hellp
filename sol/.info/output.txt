@@ -1,1 +1,10 @@
-d1234
+NO
+YES
+YES
+YES
+NO
+NO
+YES
+YES
+NO
+YES
