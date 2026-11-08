@@ -4,11 +4,11 @@
 		"key": "alt+d", // compile
 		"command": "workbench.action.terminal.sendSequence",
 		"args": {
-			"text": "g++ solve.cpp -std=c++20 -DLOCAL -O2 -DFELIX -o .info\\run.exe\u000D"
+			"text": "g++ solve.cpp -std=c++20 -Ddipto_008 -O2 -o .info/run.exe\u000D"
 		}
 	},
 	{
-		"key": "alt+r", // run
+		"key": "alt+t", // run
 		"command": "workbench.action.terminal.sendSequence",
 		"args": {
 			"text": ".\\.info\\run.exe\u000D"

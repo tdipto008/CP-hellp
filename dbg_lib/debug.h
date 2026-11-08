@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef LOCAL
+#ifdef dipto_008
 
 #include <bits/stdc++.h>
 
@@ -53,7 +53,6 @@ inline void err_prefix(
 // Debug macro
 #define dbg(...) \
 	err_prefix(__func__, __LINE__, #__VA_ARGS__), dbg_out(__VA_ARGS__)
-
 
 struct LocalIORedirect {
 	LocalIORedirect() {
