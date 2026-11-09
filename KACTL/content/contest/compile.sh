@@ -1,1 +1,4 @@
-g++ -std=c++23 -O2 -Wall -Wextra -Wshadow -Wconversion -fsanitize=address -fsanitize=undefined -fsanitize=signed-integer-overflow -D_GLIBCXX_DEBUG -o $1 $1.cpp;
+g++ solve.cpp -std=c++20 -Ddipto_008 -O2 -o .info/run.exe
+
+
+.\.info\run.exe
