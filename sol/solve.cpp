@@ -9,8 +9,8 @@ using namespace std;
 
 #define endl "\n"
 
-void solve (int TT) {
-	
+void AYE_MAIN (int TT) {
+	cout << "d" << endl;
 }
 
 int32_t main () {
@@ -19,13 +19,12 @@ int32_t main () {
 		auto _clock_start = chrono::high_resolution_clock::now(); 
 	#endif
  
-	int TT = 1;
-	//cin >> TT;
-	while(TT--){solve(TT);}
+	int TT; cin >> TT;
+	for (int QQ = 1; QQ <= TT; QQ++) AYE_MAIN (QQ);
 
 	#ifdef dipto_008
 		cerr << "Executed in " << chrono::duration_cast<chrono::milliseconds>(
 		chrono::high_resolution_clock::now()
 		- _clock_start).count() << "ms." << endl;
-	#endif
+	 #endif
 }
