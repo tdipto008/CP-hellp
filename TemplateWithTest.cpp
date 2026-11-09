@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#ifdef LOCAL
+#ifdef dipto_008
 #include "../dbg_lib/debug.h"
 #else
 #define dbg(...)
@@ -9,21 +9,22 @@ using namespace std;
 
 #define endl "\n"
 
-void solve (int TT) {
+void AYE_MAIN (int TT) {
 	
 }
 
 int32_t main () {
 	cin.tie(0)->sync_with_stdio(0);
-	#ifdef FELIX
+	#ifdef dipto_008
 		auto _clock_start = chrono::high_resolution_clock::now(); 
 	#endif
  
-	int TT = 1;
-	cin >> TT;
-	while(TT--){solve(TT);}
+	int DIPTO; cin >> DIPTO;
+	for (int TT = 1; TT <= DIPTO; TT++) {
+		AYE_MAIN (TT);
+	}
 
-	#ifdef FELIX
+	#ifdef dipto_008
 		cerr << "Executed in " << chrono::duration_cast<chrono::milliseconds>(
 		chrono::high_resolution_clock::now()
 		- _clock_start).count() << "ms." << endl;
